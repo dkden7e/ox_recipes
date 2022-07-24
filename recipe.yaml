@@ -87,7 +87,13 @@ tasks:
     path: ./tmp/fivem-appearance.zip
   - action: unzip
     src: ./tmp/fivem-appearance.zip
-    dest: ./resources
+    dest: ./resources/[ox]
+
+  ## ox_appearance
+  - action: download_github
+    src: https://github.com/overextended/ox_appearance
+    ref: main
+    dest: ./resources/[ox]/ox_appearance
 
   ## npwd
   - action: download_file
